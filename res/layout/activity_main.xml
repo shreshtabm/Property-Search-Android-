@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/instruction_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="40sp"
+        android:paddingTop="1sp"
+        android:text="@string/instruction_text"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5sp"
+        android:text="@string/address_text"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address_text_hint" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/address_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="15sp"
+        android:textColor="#f00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/city_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5sp"
+        android:text="@string/city_text"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city_text_hint" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/city_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="15sp"
+        android:textColor="#f00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5sp"
+        android:text="@string/state_text"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/state_names_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/state_text"
+        android:scrollbars="horizontal" />
+    <TextView
+        android:id="@+id/state_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="20sp"
+        android:textColor="#f00"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp" >
+        <Button
+            android:id="@+id/b_text_searchBtn"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/button_search" />
+        <ImageView
+            android:id="@+id/zillowImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/zilllow_logo" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/invalidInput_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingTop="40sp"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    
+</LinearLayout>

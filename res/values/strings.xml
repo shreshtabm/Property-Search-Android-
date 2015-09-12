@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Homework 9</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_text">CSCI571 Homework 9</string>    
+	<string name="instruction_text">Search Your Property Here</string>
+	<string name="address_text">Address<sup>*</sup>:</string>	
+	<string name="address_text_hint">Street Address</string>
+	<string name="city_text">City<sup>*</sup>:</string>	
+	<string name="city_text_hint">City</string>	
+	<string name="state_text">State<sup>*</sup>:</string>
+	<string name="image_contentDescription">Provided by Zillow</string>		
+	<string name="button_search">Search</string>	
+</resources>
